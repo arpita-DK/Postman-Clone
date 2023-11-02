@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postman API Platform | Sign Up for Free</title>
+    <link  rel="icon" type="image/x-icon" href="./i/postman-icon.png">
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="post.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css">
+    <script>
+      
+     
+
+      // changeicon = (icon) => icon.classList.toggle('fa-chevron-up')
+      function validateForm() {
+        var x = document.forms["myform"]["emailinput"].value;
+        if (x == "" || x == null) {
+          alert("Email must be filled out");
+          return false;
+        }
+      }
+      function myFunction() {
+        // console.log('e valye', e);
+  document.getElementById("myDropdown").classList.toggle("show");
+  // document.getElementsByClassName('dropbtn')[0].children[0].classList='fa fa-chevron-up';
+  if( document.getElementById("myDropdown").classList.contains("show")){
+    document.getElementsByClassName('dropbtn')[0].children[0].classList='fa fa-chevron-up';
+
+  }
+  
+  // icon.classList.toggle('fa-times')
+  //  document.getElementsByClassName("dropbtn ").style.transform = rotate-180;
+
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    document.getElementsByClassName('dropbtn')[0].children[0].classList='fa fa-chevron-down';
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+
+}
+
+ 
+
+
+      </script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+ 
+   <header>
+            <!-- header starts here -->
+            <a href="http://127.0.0.1:5500/post.html">
+              <img class="logo" src="https://www.svgrepo.com/show/354202/postman-icon.svg" alt="postmanicon"></a>
+          <nav>
+        <ul>
+          <!-- --------------------------------------------------------------------------------------------------------- -->
+          <li><div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Product  <i class="fa fa-chevron-down" onclick="changeicon(event)"></i></button> 
+            
+            <div id="myDropdown" class="dropdown-content">
+              <a class= "listA "   href="https://www.postman.com/product/what-is-postman/" target="_self">What is Postman?</a>
+              <a  class= "listA " href="https://www.postman.com/product/api-repository/" target="_self">API Repository</a>
+              <a  class= "listA " href="https://www.postman.com/product/tools/ " target="_self">Tools</a>
+              <a  class= "listA "  href="https://www.postman.com/product/governance/" target="_self">Governance</a>
+              <a  class= "listA " href="https://www.postman.com/product/workspaces/" target="_self">Workspaces </a>
+              <a   class= "listA " href="https://www.postman.com/product/integrations/" target="_self">Integration</a>
+              <a  class= "listGET" href="https://www.postman.com/downloads/" target="_self">Get started Free -></a>
+              
+              
+              
+              
+            </div>
+          </div></li>
+       
+          <!-- ----------------------------------------------------------------------------------------------------------------- -->
+            <!-- <li><a href="#">Product</a></li> -->
+            <li><a href="https://www.postman.com/pricing/" target="_self">Pricing</a></li>
+            <li><a href="#">Enterprice</a></li>
+            <li><a href="#">Resources and Support</a></li>
+            <li><a href="https://www.postman.com/explore" target="_self">Explore</a></li>
+
+            
+            
+        </ul>
+        
+        
+        <form class="example" action="/action_page.php">
+            <input type="text" placeholder= " &#xF002 Search Postman" name="search">
+            
+          </form>
+          <a  href="https://identity.getpostman.com/login" class="signin"><button class="button1" type="submit">Sign In</a></button>
+          <button class="button2" type="submit">Sign Up for Free</button>
+
+    
+    </nav>
+
+
+   </header> 
+  
+    <!-- header ends here -->
+   
+    <!-- section1 starts here -->
+    <img class="hero" src="imag1.png" alt="">
+    <div id="div1">
+      <span class="build">Build</span>
+      <span class="api">APIs together</span>
+    
+    <span class="para">Over 25 million developers use Postman. Get started by signing up or downloading the desktop app.</span>
+    </div id="div2">
+    <form class="example1" name="myform" action="/action_page.php" onsubmit="return validateForm()" >
+      <input type="email" placeholder="jsmith@example.com" name="emailinput">
+      <!-- <input type="submit" value="Sign Up for Free"> -->
+      <button type="submit" onclick="return validateForm()" >Sign up for free</button>
+    </form>
+    </div>
+    <div id="div3">
+      <span class="span2">Download the desktop app for</span>
+      <div id="div4">
+        <a class="a1" href="https://www.postman.com/downloads/?utm_source=postman-home" target="_self"><img src="i/windows.svg" alt=""> </a>
+      
+        <a class="a1" href="https://www.postman.com/downloads/?utm_source=postman-home" ><img src="i/apple.svg"></a>
+        <!-- <span class="tooltip">Mac</span> -->
+        <a class="a1" href="https://www.postman.com/downloads/?utm_source=postman-home"><img src="i/linux.svg"></a>
+       
+    </div>
+    <!-- section 1 ends here -->
+
+
+    <!-- section 2 -what is postmen -->
+
+    <div id="div5">
+      <img class="astronauts" src="i/astronauts.svg" alt="">
+      <div id="divA">
+        <h1 class="question">What is Postman?</h1>
+      </div>
+       <div id="divB">
+        <p class="para2">
+          Postman is an API platform for building and using APIs. Postman simplifies
+           each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
+        </p>
+
+        
+
+
+        <div class="div6">
+          <div id="subdiv">
+          <a href="https://www.postman.com/product/tools/">
+            <header>
+              <img class="imgsub" src="i/tools.svg">
+              <h3>API Tools</h3>
+            </header class="boxheader1">
+            <div class="subdiv1">
+            <span class="span1">
+              A comprehensive set of tools that
+               help accelerate the API Lifecycle - from design, 
+               testing, documentation, and mocking to discovery.
+            </span>
+            </div>
+          </a>
+          </div>
+          <div id="subdiv">
+            <a href="https://www.postman.com/product/api-repository/">
+              <header>
+                <img class="imgsub" src="i/2ndi.svg">
+                <h3>API Repository</h3>
+              </header>
+              <div class="subdiv1">
+              <span class="span1">
+                Easily store, iterate and collaborate around all your API artifacts on 
+                one central platform
+                 used across teams.
+              </span>
+              </div>
+            </a>
+            </div>
+            <div id="subdiv">
+              <a href="https://www.postman.com/product/workspaces/">
+                <header>
+                  <img class="imgsub" src="i/workspaces.svg">
+                  <h3>Workspaces</h3>
+                </header>
+                <div class="subdiv1">
+                <span class="span1">
+                  Organize your API work and collaborate with teammates 
+                  across your organization or 
+                  stakeholders across the world.
+                </span>
+                </div>
+              </a>
+              </div>
+              <div id="subdiv">
+                <a href="https://www.postman.com/product/governance/s">
+                  <header>
+                    <img class ="imgsub " src="i/4th.svg">
+                    <h3>Governance</h3>
+                  </header>
+                  <div class="subdiv1">
+                  <span class="span1" >
+                    Improve the quality of APIs with governance
+                     rules that ensure APIs are designed, built, tested, 
+                     and distributed meeting organizational standards.
+                  </span>
+                  </div>
+                </a>
+                </div>
+                </div>
+                <span class="s1">
+                <button class="button3" type="submit">Learn More</button>
+                </span>
+
+                <!-- section 2- learn more -->
+
+
+                
+                 <div class="div7">
+                <h1 class="wat">What's happening on Postman</h1>
+                <p class="watP">Browse the largest network of APIs and share what you
+                   build with developers across the planet.<a class="explore" href="https://www.postman.com/explore">Explore the Public API Network →</a></p>
+                 
+                
+                 </div>
+
+                 
+
+
+                
+              <div class="gridContainer">
+                <div class="containerItems">
+               
+                  <img class="logoimg" src="i/denvent.png" alt="">
+                  <a href="#"><h3 class="contentA-H3">Cisco DevNet's Public Workspace</h3></a>
+                  <p class="paralogo">DevNet is the of  home Cisco’s API guides and learning. developer.cisco.com</p>
+             
+                  <img CLASS="squareC"src="i/squares (3).png">
+                  <p class="workspace">  Workspace   </p>
+                  <p class="BY">By </p>
+                 <a class="ciscoA" href="#">Cisco DevNet</a>
+                    <img class="eye" src="i/view (1).png">
+                        <p class="watchers">100+ watchers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100k+views</p>
+                        <!-- <span class="views">100k+ views   </span> -->
+
+
+                
+                </div>
+                
+                <div class="containerItems">
+                  <img class="logoimg" src="i/a.png" alt="">
+                  <a href="#"><h3 class="contentA-H3">Amplitude Developers</h3></a>
+                  <p class="paralogo">The official workspace of Amplitude Developers</p>
+             
+                  <img CLASS="AmplituesquareC"src="i/squares (3).png">
+                  <p class="Amplitudeworkspace">  Workspace   </p>
+                  <p class="AmplitudeBY">By </p>
+                  <a class="AmplitudeA"   href="#">Amplitude Developer Docs</a>
+                    <img class="Amplieye" src="i/view (1).png">
+                        <p class="Ampliwatchers">100+ watchers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100k+views</p>
+
+
+
+
+
+                </div>
+                <div class="containerItems"> 
+                  <img class="logoimg" src="i/microsoftgrph.png" alt="">
+                  <a href="#"><h3 class="contentA-H3">Microsoft Graph</h3></a>
+                  <p class="paralogo">Microsoft Graph postman collections workspace.</p>
+             
+                  <img CLASS="AmplituesquareC"src="i/squares (3).png">
+                  <p class="Amplitudeworkspace">  Workspace   </p>
+                  <p class="AmplitudeBY">By </p>
+                  <a class="AmplitudeA"   href="#">Microsoft Graph .</a>
+                    <img class="Amplieye" src="i/view (1).png">
+                        <p class="Ampliwatchers">100+ watchers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100k+views</p>
+                      
+                  </div>
+                <div class="containerItems">
+                  <img class="logoimg" src="i/instagram.png" alt="">
+                  <a href="#"><h3 class="contentA-H3">Instagram</h3></a>
+                  <p class="paralogo">Official Instagram API workspace</p>
+             
+                  <img CLASS="AmplituesquareC"src="i/squares (3).png">
+                  <p class="Amplitudeworkspace">  Workspace   </p>
+                  <p class="AmplitudeBY">By </p>
+                  <a class="AmplitudeA"   href="#">Meta</a>
+                    <img class="Amplieye" src="i/view (1).png">
+                        <p class="Ampliwatchers">100+ watchers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100k+views</p>
+                </div>
+                <div class="containerItems">
+                  <img class="logoimg" src="i/wowza.png" alt="">
+                  <a href="#"><h3 class="contentA-H3">Dolby.io Media APIs</h3></a>
+                  <p class="paralogo">Dolby.io Media APIs Postman Collection</p>
+             
+                  <img CLASS="AmplituesquareC"src="i/squares (3).png">
+                  <p class="Amplitudeworkspace">  Workspace   </p>
+                  <p class="AmplitudeBY">By </p>
+                  <a class="AmplitudeA"   href="#">Dolby</a>
+                    <img class="Amplieye" src="i/view (1).png">
+                        <p class="Ampliwatchers">100+ watchers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100k+views</p>
+                </div>
+                <div class="containerItems">
+                  <img class="logoimg" src="i/intel.png" alt="">
+                  <a href="#"><h3 class="contentA-H3">Intel® SecL-DC - Foundational Security</h3></a>
+                  <p class="paralogo">Quick start API Collections for Foundational Security use cases of Intel® SecL-DC</p>
+             
+                  <img CLASS="squareCIntel"src="i/squares (3).png">
+                  <p class="intelworkspace">  Workspace   </p>
+                  <p class="intelBY">By </p>
+                  <a class="ciscoAIntel"   href="#">Intel® Security Libraries for Data Center</a>
+                    <img class="eyeIntel" src="i/view (1).png">
+                        <p class="watchersIntel">100+ watchers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100k+views</p>
+                </div>
+                
+
+                 </div> 
+                
+                 <div class="theFuture" >
+                 <img class="bookIMG" src="i/books.png">
+                 
+                 <h2 class="fheading">The future is API-first</h2>
+                 <pre class="fpara">
+                  At Postman, we believe the future will be built with APIs. 
+                  The API-first World graphic novel tells the story of how and why the API-first world is coming to be
+                 </pre>
+                
+
+
+
+                 </div> 
+                 <h2 class="spotlight">In the spotlight</h2> 
+                 <p class="spotpara">The best APIs, collections, and workspaces handpicked by Postman. <a class="spotA"  href="https://www.postman.com/explore/spotlight"> See what more is in the spotlight →</a><p>
+                 
+                  <div class="tableContainer">
+
+                    <div class="tablecontainerItems">
+                    <h2 class="tablecell1">
+                      Trending APIs this week
+                    </h2>
+                    <p class="tablecell1PARA">
+                      There’s an API for that: discover the APIs, workspaces, and collections the Postman community is creating, viewing, and forking.</p>
+                      <a class="tablecellPARAa" href="#">
+                        View Complete List →</a> 
+
+                    
+                    </div>
+                    <div class="tablecontainerItems">
+                      <h2 class="tablecell2">New and Noteworthy </h2>
+                      <p class="tablecell2PARA">
+                        Discover newly added public workspaces with public API
+                        s from a multitude of industries.</p>
+                        <a href="#" class="tablecell2PARAa"> 
+                        View Complete List →</a>
+                      </p>
+                    </div>
+                    <div class="tablecontainerItems">
+                      <img class="kontentimg" src="i/kontent.png" alt="">
+                      <h3 class="kontentH">Kontent.ai.APIs</h3>
+                      <p class="kontentP"><img class="collection" src="i/collection (1).png" alt="">Collection&nbsp;&nbsp;&nbsp;&nbsp;
+                        By
+                        Kontent.ai</p>
+                        <p class="kontentP1"><img class="branch"src="i/branch.png" alt="">500+ forks&nbsp;&nbsp;&nbsp;&nbsp;<img class="view" src="i/view (1).png">&nbsp;400+ watchers&nbsp;&nbsp;4k+views</p>
+
+
+                    </div>
+                    <div class="tablecontainerItems">
+                      <img class="kontentimg" src="i/mastercard.png" alt="">
+                     <h3 class="kontentH">Mastercard Devlopers</h3>
+                      <p class="masterPARA">A workspace for exploring the Mastercard APIs published on the Mastercard Developers platform.</p>
+                        <p class="masterP1">By
+                          VMware Carbon Black&nbsp;&nbsp;&nbsp;&nbsp;<img class="view" src="i/view (1).png">&nbsp;2 watchers&nbsp;&nbsp;300+views</p>
+
+
+                    </div>
+                  </div>
+
+
+
+                  <div class="div8">
+                  <img  class="astronauts2" src="i/2ndastronauts.svg" alt="">
+
+                    <h2 class="getstarted">
+                      Get started with Postman
+                    </h2>
+                  </div>
+                <div id="div9">
+                <form class="form" name="myform" action="/action_page.php" onsubmit="return validateForm()" >
+                  <input type="email" placeholder="jsmith@example.com" name="emailinput">
+                  <!-- <input type="submit" value="Sign Up for Free"> -->
+                  <button type="submit" onclick="return validateForm()" >Sign up for free</button>
+                </form>
+                </div>
+              
+               <div class="div9">
+                <img class="rocket" src="i/rocket.svg" alt="">
+                <p class="copyright">© 2023 Postman ,Inc.</p>
+
+
+
+                <!-- first block started -->
+                <div class="postman">
+                  <div class="headerdiv">
+                  <h2 class ="headingH2">Postman</h2>
+                  </div>
+                  <div class="pointsList">
+                    <a  class="pointsContent" href="#" >
+                      What is Postman?</a>
+                  </div>
+                  <div class="pointsList">
+                    <a href="#" class="pointsContent">
+                      API respository </a `>
+                  </div>
+                  <div class="pointsList">
+                    <a href="#" class="pointsContent">
+                      Tools</a>
+                  </div>
+                  <div class="pointsList">
+                    <a class="pointsContent" href="#">
+                      Governance</a>
+                  </div>
+                  <div class="pointsList">
+                    <a class="pointsContent" href="#">
+                      Workspaces</a>
+                  </div>
+                  <div class="pointsList">
+                    <a class="pointsContent" href="#">
+                      Integrations</a>
+                  </div>
+                  <div class="pointsList">
+                    <a class="pointsContent" href="#">
+                      Enterprise</a>
+                  </div>
+                  <div class="pointsList">
+                    <a class="pointsContent" href="#">
+                      Plans Pricing</a>
+                  </div> 
+                  <div class="pointsList">
+                    <a class="pointsContent" href="#">
+                      Download the app</a>
+                  </div>
+                  <div class="pointsList">
+                    <a class="pointsContent" href="#">
+                      Support cenrter</a>
+                  </div>
+                </div>
+                  <!-- first block ended -->
+
+
+                  <!-- second block started here -->
+                  <div class="Company">
+
+                  
+                <div  class="headerdiv">
+                  <h2 class="headingH2">Company</h2>
+
+                </div>
+                <div class="pointsList">
+                  <a class="pointsContent" href="#">
+                    About</a>
+                 </div>
+                 <div class="pointsList">
+                  <a class="pointsContent" href="#">
+                    Careers and Culture</a>
+                 </div>
+                 <div class="pointsList">
+                  <a class="pointsContent" href="#">
+                    Press and Media</a>
+                 </div>
+                 <div class="pointsList">
+                  <a class="pointsContent" href="#">
+                    Contact Us </a>
+                 </div>
+                 <div class="pointsList">
+                  <a class="pointsContent" href="#">
+                    Partner Program</a>
+                 </div>
+                  </div>
+                 <!-- second block ended here -->
+
+                  <!-- Third block started here -->
+                  <div class="APICategories">
+
+
+                  
+                    <div  class="headerdiv">
+                      <h2 class="headingH2">API Categories</h2>
+    
+                    </div>
+                    <div class="pointsList">
+                      <a class="pointsContent" href="#">
+                        eSignature</a>
+                     </div>
+                     <div class="pointsList">
+                      <a class="pointsContent" href="#">
+                        Travel</a>
+                     </div>
+                     <div class="pointsList">
+                      <a class="pointsContent" href="#">
+                        Database</a>
+                     </div>
+                     <div class="pointsList">
+                      <a class="pointsContent" href="#">
+                       App  Security</a>
+                     </div>
+                     <div class="pointsList">
+                      <a class="pointsContent" href="#">
+                        All Categories</a>
+                     </div>
+                  </div>
+                  <!-- third block ends here -->
+
+
+                  <!-- <second subblock starts here -->
+                    <div class="SecurityAndTerms">
+                    <div  class="headerdiv">
+                      <h2 class="headingH2">Security and terms</h2>
+    
+                    </div>
+                    <div class="pointsList">
+                      <a class="pointsContent" href="#">
+                        Trust and Security</a>
+                     </div>
+                     <div class="pointsList">
+                      <a class="pointsContent" href="#">
+                        Privacy policy</a>
+                     </div>
+                     <div class="pointsList">
+                      <a class="pointsContent" href="#">
+                        Terms</a>
+                     </div>
+                     <!-- second subblock ends here -->
+
+                     <!-- third subblock starts here -->
+                     <div class="ExplorePublic">
+                      <div  class="headerdiv">
+                        <h2 class="headingH2">Explore public</h2>
+      
+                      </div>
+                      <div class="pointsList">
+                        <a class="pointsContent" href="#">
+                          Collections</a>
+                       </div>
+                       <div class="pointsList">
+                        <a class="pointsContent" href="#">
+                          Workspaces</a>
+                       </div>
+                       <div class="pointsList">
+                        <a class="pointsContent" href="#">
+                          Teams</a>
+                       </div>
+
+                       <!-- fourth block started -->
+                       <div class="Social">
+
+
+                  
+                        <div  class="headerdiv">
+                          <h2 class="headingH2">Social</h2>
+        
+                        </div>
+                        <div class="pointsList">
+                          <a class="pointsContent" href="#"><img  class="appicon"src="i/twitter.svg">
+                           &nbsp; Twitter</a>
+                         </div>
+                         <div class="pointsList">
+                          <a class="pointsContent" href="#"><img  class="appicon" src="i/linkedin.svg">
+                            &nbsp; Linkedin</a>
+                         </div>
+                         <div class="pointsList">
+                          <a class="pointsContent" href="#"><img  class="appicon" src="i/github.svg">
+                            &nbsp;  Github</a>
+                         </div>
+                         <div class="pointsList">
+                          <a class="pointsContent" href="#"><img  class="appicon" src="i/youtube.svg">
+                            &nbsp;  Youtube</a>
+                         </div>
+                         <div class="pointsList">
+                          <a class="pointsContent" href="#"><img  class="appicon" src="i/twitch.svg">
+                            &nbsp; Twitch</a>
+                         </div>
+                      </div>
+
+
+                    
+                     
+                     
+                  </div>
+
+
+
+
+
+
+
+
+
+                  </div>
+
+
+
+
+
+
+
+
+
+                  
+
+              
+
+                </div>
+
+               
+              
+
+
+              
+    <!-- <div id="content1">
+
+    <h1 >Build</h1>
+   </div>
+   <div id="content2">
+    <h2>APIs together</h2>
+   </div> -->
+    </body>
+   </body>
+</body>
+</html>
+
